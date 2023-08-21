@@ -30,7 +30,7 @@ prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book
  ![image](https://github.com/suzanayesh/aws/assets/100838193/a450dc07-1de9-41d7-ae14-7de1f6ba9337)
  
 - I build a Target Group
-![Uploading Screenshot 2023-08-19 142820.png…]()
+![Screenshot 2023-08-19 142820](https://github.com/suzanayesh/aws/assets/100838193/a6b2b301-38c9-45df-ac86-19e7e84fbceb)
 
 - I build a Load Balancer and connected with my Target Group 
   ![image](https://github.com/suzanayesh/aws/assets/100838193/07c53744-e5a2-492a-b0ba-bbf6affa5a52)
