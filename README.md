@@ -17,3 +17,23 @@ Deliverables:
 Note-1:
 When building the app, make sure to package only the dist directory, package.json and package-lock.json in the gzipped package, for example:
 tar czvf app.tar.gz package.json package-lock.json dis
+## MY Solution :
+- First I edit my GitHub repo for Book Project to add Folder name Infrastrcuter that have a app.service, 
+prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book-mang-api.git to this https://github.com/suzanayesh/book-prjectgsg3.git (I upload all folders not as a terminal becouse I have problem in git ) .
+- I add a Release that have a app.tar.gz package.json package-lock.json dist
+![image](https://github.com/suzanayesh/aws/assets/100838193/f782db7d-c332-46bc-b279-35bbb2d42fba)
+- I build to intances
+
+- ![image](https://github.com/suzanayesh/aws/assets/100838193/450719cb-ad70-4814-8f71-9f055680cfa3)
+
+- I have a security group and key from befor, so every time I use them .
+ ![image](https://github.com/suzanayesh/aws/assets/100838193/a450dc07-1de9-41d7-ae14-7de1f6ba9337)
+ 
+- I build a Target Group
+ ![image](https://github.com/suzanayesh/aws/assets/100838193/56bae455-7610-4d7f-8541-50c3f866fd85)
+
+- I build a Load Balancer and connected with my Target Group 
+  ![image](https://github.com/suzanayesh/aws/assets/100838193/07c53744-e5a2-492a-b0ba-bbf6affa5a52)
+  ![image](https://github.com/suzanayesh/aws/assets/100838193/6262dfcd-950e-44f3-9160-ce3dbd658198)
+
+ 
