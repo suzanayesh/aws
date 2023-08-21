@@ -39,11 +39,12 @@ prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book
 ![image](https://github.com/suzanayesh/aws/assets/100838193/aa810855-d2e1-4f5c-ad6d-51203185dcb2)
 ![image](https://github.com/suzanayesh/aws/assets/100838193/f5263ac4-0134-4e39-9a8c-d3e702081cea)
 ![image](https://github.com/suzanayesh/aws/assets/100838193/1dcd4ce6-801c-4297-8e4a-a16ed5962e74)
-![Uploading Screenshot 2023-08-19 141827.png…]()
+![Screenshot 2023-08-19 141827](https://github.com/suzanayesh/aws/assets/100838193/abce4621-b754-49a5-b772-b8442b1776e3)
+`Then all instances faild and be unHealthy so I tried to fix it, and it doesnt work `
 
-
-
-
-
-
+*and it seems correct but doesnt word I tried several times *
+![Screenshot 2023-08-21 202735](https://github.com/suzanayesh/aws/assets/100838193/9ae05a08-7c79-472e-83be-392e9743df1f)
+- I try to use this script then the second one
+ 
+- I try to use another repo from my colleague that is correct and work there , but in my PC doesnt work, lol .
  
