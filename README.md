@@ -45,6 +45,25 @@ prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book
 *and it seems correct but doesnt word I tried several times *
 ![Screenshot 2023-08-21 202735](https://github.com/suzanayesh/aws/assets/100838193/9ae05a08-7c79-472e-83be-392e9743df1f)
 - I try to use this script then the second one
- 
+```script
+#!/bin/bash
+set -e
+
+sudo apt update
+sudo apt upgrade -y
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+sudo apt install nodejs curl -y
+
+cd /home/ubuntu
+git clone https://github.com/suzanayesh/book-prjectgsg3.git 
+cd app && npm install
+npm run build
+
+sudo mv ./infrastructure/app.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable app.service
+sudo reboot
+```
 - I try to use another repo from my colleague that is correct and work there , but in my PC doesnt work, lol .
  
