@@ -35,5 +35,15 @@ prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book
 - I build a Load Balancer and connected with my Target Group 
   ![image](https://github.com/suzanayesh/aws/assets/100838193/07c53744-e5a2-492a-b0ba-bbf6affa5a52)
   ![image](https://github.com/suzanayesh/aws/assets/100838193/6262dfcd-950e-44f3-9160-ce3dbd658198)
+- Then I build a Auto scalling Group and templete
+![image](https://github.com/suzanayesh/aws/assets/100838193/aa810855-d2e1-4f5c-ad6d-51203185dcb2)
+![image](https://github.com/suzanayesh/aws/assets/100838193/f5263ac4-0134-4e39-9a8c-d3e702081cea)
+![image](https://github.com/suzanayesh/aws/assets/100838193/1dcd4ce6-801c-4297-8e4a-a16ed5962e74)
+![Uploading Screenshot 2023-08-19 141827.png…]()
+
+
+
+
+
 
  
