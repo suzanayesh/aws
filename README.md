@@ -45,7 +45,37 @@ prepare-instance.sh so I change from this one https://github.com/suzanayesh/Book
 *and it seems correct but doesnt word I tried several times *
 ![Screenshot 2023-08-21 202735](https://github.com/suzanayesh/aws/assets/100838193/9ae05a08-7c79-472e-83be-392e9743df1f)
 - I try to use this script then the second one
-```script
+```javascript
+#!/bin/sh
+set -e
+
+sudo apt update
+sudo apt upgrade -y
+
+# install nodejs repo
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+sudo apt install nodejs jq curl -y
+
+# create app & github users
+sudo useradd --system --create-home --shell /usr/sbin/nologin app
+sudo useradd -g app --no-create-home --no-user-group --home-dir /home/app --shell /bin/bash github
+sudo usermod --append --groups app github
+
+# deploy app
+repo="suzanayesh/book-prjectgsg3"
+download_url=$(curl "https://github.com/suzanayesh/book-prjectgsg3/releases/tag/Sprint" | jq --raw-output '.assets[0].browser_download_url')
+
+curl -O "https://github.com/suzanayesh/book-prjectgsg3/blob/main/infrastructure/app.service"
+sudo mv app.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable app.service
+
+sudo -u app sh -c "mkdir -p /home/app/app && cd /home/app/app && curl -LO $download_url  && tar xzvf app.tar.gz  && npm install --omit=dev"
+
+sudo reboot
+```
+```javascript
 #!/bin/bash
 set -e
 
@@ -65,5 +95,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable app.service
 sudo reboot
 ```
-- I try to use another repo from my colleague that is correct and work there , but in my PC doesnt work, lol .
+- I try to use another repo from my colleague that is correct and every thing is work there , but in my PC doesnt work, lol .
  
